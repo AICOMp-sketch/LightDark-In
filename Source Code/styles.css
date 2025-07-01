@@ -1,0 +1,101 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Urbanist', sans-serif;
+      transition: background 0.6s ease, color 0.6s ease;
+      background: #f3f6fa;
+      color: #111;
+    }
+
+    body.dark-mode {
+      background: linear-gradient(to bottom right, #121417, #1d2024);
+      color: #f1f1f1;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      transition: background 0.6s ease;
+    }
+
+    .auth-box {
+      background: white;
+      padding: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      max-width: 420px;
+      width: 100%;
+      transition: background 0.6s ease, color 0.6s ease, box-shadow 0.6s ease;
+    }
+
+    .auth-box.dark {
+      background: #1f1f1f;
+      color: white;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.8rem;
+      font-weight: 700;
+    }
+
+    label {
+      font-size: 0.95rem;
+      display: block;
+      margin-top: 1.5rem;
+      margin-bottom: 0.4rem;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.9rem 1.1rem;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+      font-size: 0.95rem;
+      background: #fff;
+      transition: background 0.3s, border 0.3s, color 0.3s;
+    }
+
+    .dark input {
+      background: #2c2c2c;
+      border: 1px solid #444;
+      color: #f1f1f1;
+    }
+
+    button {
+      margin-top: 2.2rem;
+      width: 100%;
+      padding: 1rem;
+      background: linear-gradient(to right, #007cf0, #00dfd8);
+      color: white;
+      border: none;
+      border-radius: 14px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.03);
+    }
+
+    .toggle {
+      margin-top: 1.5rem;
+      text-align: center;
+      font-size: 0.92rem;
+    }
+
+    .toggle a {
+      color: #007cf0;
+      cursor: pointer;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .toggle a:hover {
+      text-decoration: underline;
+    }
